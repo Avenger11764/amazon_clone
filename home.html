@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.in: Great Indian Festival</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amz: { dark: '#131921', light: '#232f3e', yellow: '#febd69', orange: '#f90', bg: '#e3e6e6', blue: '#007185', red: '#CC0C39' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="bg-amz-bg font-sans flex flex-col min-h-screen">
+
+    <header class="bg-amz-dark text-white flex items-center px-4 py-2 space-x-4">
+        <a href="home.html" class="nav-item p-2">
+            <span class="text-2xl font-bold tracking-tighter">amazon<span class="text-amz-orange">.in</span></span>
+        </a>
+
+        <div class="nav-item p-2 flex items-end cursor-pointer hidden md:flex">
+            <span class="text-xl mb-1 mr-1">📍</span>
+            <div class="flex flex-col leading-tight">
+                <span class="text-xs text-gray-300">Deliver to Avinash</span>
+                <span class="text-sm font-bold">Greater Noida 201310</span>
+            </div>
+        </div>
+
+        <div class="flex-grow flex h-10 rounded-md overflow-hidden focus-within:ring-2 focus-within:ring-amz-orange">
+            <select class="bg-gray-100 text-black text-xs px-2 border-r border-gray-300 outline-none cursor-pointer hover:bg-gray-200 hidden sm:block"><option>All</option></select>
+            <input type="text" placeholder="Search Amazon.in" class="flex-grow px-3 text-black outline-none">
+            <button class="bg-amz-yellow hover:bg-yellow-500 px-4 text-black text-xl flex items-center justify-center">🔍</button>
+        </div>
+
+        <div class="nav-item p-2 flex flex-col leading-tight cursor-pointer hidden sm:flex">
+            <span class="text-xs text-gray-300">Hello, Avinash</span>
+            <span class="text-sm font-bold">Account & Lists ▾</span>
+        </div>
+
+        <div class="nav-item p-2 flex flex-col leading-tight cursor-pointer hidden lg:flex">
+            <span class="text-xs text-gray-300">Returns</span>
+            <span class="text-sm font-bold">& Orders</span>
+        </div>
+
+        <div class="nav-item p-2 flex items-end cursor-pointer">
+            <span class="text-3xl font-bold text-amz-orange">🛒</span>
+            <span class="text-sm font-bold mb-1">Cart</span>
+        </div>
+    </header>
+
+    <nav class="bg-amz-light text-white text-sm flex items-center px-4 py-2 space-x-4 overflow-x-auto custom-scrollbar whitespace-nowrap">
+        <a href="#" class="nav-item p-1 font-bold flex items-center gap-1">☰ All</a>
+        
+        <a href="about.html" class="nav-item p-1 font-bold text-amz-yellow text-base">About Us</a>
+        <a href="contact.html" class="nav-item p-1 font-bold text-amz-yellow text-base">Contact Page</a>
+        
+        <div class="border-l border-gray-500 h-5 mx-2"></div>
+
+        <a href="#" class="nav-item p-1">Fresh</a>
+        <a href="#" class="nav-item p-1">Amazon miniTV</a>
+        <a href="#" class="nav-item p-1">Sell</a>
+        <a href="#" class="nav-item p-1">Best Sellers</a>
+        <a href="#" class="nav-item p-1">Today's Deals</a>
+        <a href="#" class="nav-item p-1">Mobiles</a>
+    </nav>
+
+    <main class="max-w-[1500px] mx-auto relative pb-10 flex-grow">
+        <div class="relative w-full h-[300px] md:h-[400px] bg-gradient-to-r from-red-800 via-amz-red to-red-600 flex flex-col items-center justify-center text-white hero-gradient shadow-inner text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-2 tracking-wide drop-shadow-lg">GREAT INDIAN FESTIVAL</h1>
+            <p class="text-xl md:text-3xl font-semibold mb-6">Up to 75% Off on Electronics & Accessories</p>
+            <div class="bg-white text-amz-red px-6 py-2 rounded-full font-bold text-lg md:text-xl shadow-lg cursor-pointer hover:bg-gray-100 transition">Shop Now</div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 px-5 -mt-10 md:-mt-20 relative z-10">
+            
+            <div class="product-card">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=400&q=80" alt="Laptop" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">High-Performance Developer Laptop - 16GB RAM, 512GB SSD</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-amz-red text-white text-xs font-bold px-2 py-1 rounded-sm">Great Indian Festival</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹65,990</span>
+                    <span class="text-sm text-gray-500 line-through">₹89,990</span>
+                </div>
+                <p class="text-xs text-amz-blue font-bold mb-3">✓ Prime</p>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=400&q=80" alt="Keyboard" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Mechanical Gaming Keyboard with RGB Backlit, Blue Switches</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-sm">60% off</span>
+                    <span class="text-xs font-bold text-red-600">Limited time deal</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹1,999</span>
+                    <span class="text-sm text-gray-500 line-through">₹4,999</span>
+                </div>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=400&q=80" alt="Plant" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Natural Live Jade Plant in Ceramic Pot - Best Indoor Plant</h2>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-xl font-bold">₹299</span>
+                    <span class="text-sm text-gray-500 line-through">₹499</span>
+                </div>
+                <p class="text-xs text-amz-blue font-bold mb-3">✓ Prime</p>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+            <div class="product-card">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=400&q=80" alt="Mouse" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Wireless Gaming Mouse, 12000 DPI, Lightweight</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-amz-red text-white text-xs font-bold px-2 py-1 rounded-sm">Great Indian Festival</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹1,499</span>
+                    <span class="text-sm text-gray-500 line-through">₹2,500</span>
+                </div>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=400&q=80" alt="Headphones" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Noise Cancelling Bluetooth Headphones over ear</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-sm">45% off</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹3,299</span>
+                    <span class="text-sm text-gray-500 line-through">₹5,999</span>
+                </div>
+                <p class="text-xs text-amz-blue font-bold mb-3">✓ Prime</p>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card mt-2">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=400&q=80" alt="Monitor" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">27-inch 4K UHD IPS Monitor with Frameless Design</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-amz-red text-white text-xs font-bold px-2 py-1 rounded-sm">Great Indian Festival</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹22,499</span>
+                    <span class="text-sm text-gray-500 line-through">₹35,000</span>
+                </div>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+             <div class="product-card mt-2">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=400&q=80" alt="Backpack" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Waterproof College & Office Backpack with Laptop Compartment</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-sm">55% off</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹899</span>
+                    <span class="text-sm text-gray-500 line-through">₹1,999</span>
+                </div>
+                <p class="text-xs text-amz-blue font-bold mb-3">✓ Prime</p>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card mt-2">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=400&q=80" alt="Smartwatch" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Smartwatch with 1.8" Display, Bluetooth Calling & SpO2</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-amz-red text-white text-xs font-bold px-2 py-1 rounded-sm">Great Indian Festival</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹1,299</span>
+                    <span class="text-sm text-gray-500 line-through">₹4,999</span>
+                </div>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card mt-2">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Phone" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">Latest 5G Smartphone, 8GB RAM, 256GB Storage, 50MP Camera</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="text-xs font-bold text-red-600">Lowest price of the year</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹28,999</span>
+                    <span class="text-sm text-gray-500 line-through">₹34,999</span>
+                </div>
+                <p class="text-xs text-amz-blue font-bold mb-3">✓ Prime</p>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+
+            <div class="product-card mt-2">
+                <div class="relative w-full h-48 flex items-center justify-center mb-3 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=400&q=80" alt="SSD" class="object-cover h-full w-full rounded">
+                </div>
+                <h2 class="text-sm font-medium line-clamp-2 hover:text-amz-orange cursor-pointer">1TB NVMe M.2 Internal Solid State Drive (Gen 4)</h2>
+                <div class="flex items-center gap-1 mt-1">
+                    <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded-sm">30% off</span>
+                </div>
+                <div class="mt-2 flex items-baseline gap-2">
+                    <span class="text-2xl font-bold">₹6,499</span>
+                    <span class="text-sm text-gray-500 line-through">₹9,500</span>
+                </div>
+                <button class="w-full bg-yellow-400 hover:bg-yellow-500 rounded-full py-1.5 text-sm font-medium shadow-sm transition mt-auto">Add to cart</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="mt-auto">
+        <a href="#" class="block bg-gray-700 hover:bg-gray-600 text-white text-center py-4 text-sm font-medium transition">Back to top</a>
+    </footer>
+
+</body>
+</html>
